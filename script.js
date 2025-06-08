@@ -46,7 +46,10 @@ tl.from(".hero-desc h4 svg", {
     opacity: 0,
     duration: 0.6,
     ease: "power4.out"
-}, "-=0.4");
+}, "-=0.4").to(".border", {
+    opacity: 0,
+    duration:0.5
+});
 
 
 gsap.from(".hero-desc p", {
