@@ -33,6 +33,7 @@ body {
     left: 0;
     z-index: 999;
     overflow: hidden;
+    /* Display Block*/
     display: none;
     pointer-events: none;
 }
@@ -105,4 +106,128 @@ header .nav-links a {
     transition-property: all;
     transition-duration: 0.6s;
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* ------- Hero Section Style ------- */
+#hero {
+    width: 100%;
+    height: 100%;
+    padding-left: clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem);
+    padding-right: clamp(2.25rem, 2.1786rem + 0.3571vi, 2.5rem);
+}
+
+#hero .hero-heading h1 {
+    text-wrap: balance;
+    line-height: 1;
+    letter-spacing: 1;
+    margin-top: 2rem;
+}
+
+#hero .hero-heading h1 svg {
+    width: 100%;
+    height: 100%;
+}
+
+#hero .hero-heading h1 svg path {
+    transform: translateY(100%);
+    /* Opacity 0*/
+    opacity: 1;
+}
+
+#hero .hero-content {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    margin-top: 4rem;
+    position: relative;
+    height: 30vh;
+    padding-bottom: 4rem;
+}
+
+#hero .hero-content .hero-desc {
+    height: 45vh;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#hero .hero-content .hero-desc h4 svg {
+    font-size: 28px;
+}
+
+#hero .hero-content .hero-desc p {
+    font-size: clamp(1rem, 0.9286rem + 0.357vi, 1.25rem);
+    color: rgb(107 100 92/1);
+    max-width: 30vw;
+    line-height: 120%;
+    text-wrap: balance;
+}
+
+#hero .hero-content .hero-desc button {
+    background-color: rgb(57 54 50/1);
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    color: rgb(232 232 227/1);
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 0.9286rem + 0.357vi, 1.25rem);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#hero .hero-content .hero-desc button:hover {
+    background-color: rgb(140 140 115/1c);
+}
+
+#hero .hero-content .hero-img {
+    grid-column: span 4;
+    height: 45vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .hero-content .hero-img .image {
+    overflow: hidden;
+    width: 20vw;
+    height: 55vh;
+    position: relative;
+}
+
+#hero .hero-content .hero-img .image img {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 0.3s linear;
+}
+
+#hero .hero-content .hero-img .image img:hover {
+    filter: grayscale(0);
+}
+
+#hero .hero-content .hero-date {
+    height: 45vh;
+    grid-column: span 4;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#hero .hero-content .hero-date p {
+    font-size: clamp(0.9rem, 0.5393rem + 0.3786vi, 1rem);
+    color: rgb(107 100 92/1);
+    text-transform: uppercase;
+}
+
+#hero .hero-content .hero-date h2 {
+    font-size: clamp(3rem, 2.25rem + 3.75vi, 5.6rem);
 }
