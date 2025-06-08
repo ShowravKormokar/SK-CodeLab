@@ -1,3 +1,16 @@
+// Border Animation
+gsap.fromTo(
+    ".border",
+    { width: "0%" },
+    {
+        width: "100%",
+        duration: 3,
+        delay: 1,
+        ease: "power3.out"
+    }
+);
+
+
 // GSAP TimeLine
 let tl = gsap.timeline();
 
@@ -8,7 +21,7 @@ tl.to(".preloader", {
     ease: "power2.out"
 })
     .add(() => {
-        document.querySelector(".preloader").style.dispaly = "none";
+        document.querySelector(".preloader").style.display = "none";
     })
     .from(".navbar", {
         duration: 1,
