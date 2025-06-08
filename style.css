@@ -252,14 +252,16 @@ body {
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
     padding: clamp(4.5rem, 4.3572rem + 0.71435vi, 5rem) clamp(1.6875rem, 1.6339rem + 0.265vi, 1.87rem);
+    /* padding: 4.5rem 1.6rem; */
 }
 
-#services h2 {
+#services .text-ser h2 {
     color: #d1d1c7;
     font-size: clamp(3rem, 2.25rem + 3.75vw, 5.62rem);
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
+    padding-bottom: 5rem;
 }
 
 #services div h2 span {
@@ -293,6 +295,7 @@ body {
 
 .ser-container {
     width: 100%;
+    height: fit-content;
     padding: 3rem 0rem;
     position: relative;
 }
@@ -358,12 +361,12 @@ body {
     padding-bottom: 1rem;
 }
 
-.ser-container .one .oneR .list .listItem span{
+.ser-container .one .oneR .list .listItem span {
     font-size: clamp(1rem, 0.9286rem + 0.357vi, 1.25rem);
     padding-right: 1.5rem;
     font-weight: 600;
 }
 
-.listItem.i-bt{
+.listItem.i-bt {
     border: none !important;
 }

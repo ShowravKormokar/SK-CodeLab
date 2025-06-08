@@ -48,7 +48,7 @@ tl.from(".hero-desc h4 svg", {
     ease: "power4.out"
 }, "-=0.4").to(".border", {
     opacity: 0,
-    duration:0.5
+    duration: 0.5
 });
 
 
@@ -82,3 +82,69 @@ gsap.from(".hero-date p, .hero-date h2", {
     duration: 0.5,
     ease: "power2.out"
 }, "-=0.4")
+
+
+// ----------- Services Animation
+gsap.set("#services", {
+    opacity: 0.873,
+    // transform: "translateY(5.05529px) scale(0.993681) translateZ(0px)"
+})
+
+const texts = document.querySelectorAll("#services .text-ser h2 span");
+
+texts.forEach((text) => {
+    gsap.set(text, {
+        y: "100%",
+        opacity: 0
+    })
+})
+
+gsap.to(texts, {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power4.out",
+    scrollTrigger: {
+        trigger: "#services",
+        start: "top 100%",
+        toggleActions: "play none none none",
+    },
+});
+
+gsap.to("#ser-1", {
+    duration: 3,
+    scrollTrigger: {
+        trigger: "#ser-1",
+        pin: true,
+        start: "top 8%",
+        end: "bottom -32%",
+        scrub: true,
+        pinSpacing: false,
+        // markers: true
+    }
+});
+gsap.to(".ser-2", {
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".ser-2",
+        start: "top 26%",
+        end: "bottom 39%",
+        scrub: true,
+        pin: true,
+        pinSpacing: false,
+        // markers: true
+    }
+});
+gsap.to(".ser-3", {
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".ser-3",
+        start: "top 44%",
+        end: "bottom 110%",
+        scrub: true,
+        pin: true,
+        pinSpacing: false,
+        // markers: true
+    }
+});
