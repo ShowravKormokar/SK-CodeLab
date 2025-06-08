@@ -242,3 +242,128 @@ body {
 #hero .hero-content .hero-date h2 {
     font-size: clamp(3rem, 2.25rem + 3.75vi, 5.6rem);
 }
+
+
+/* ---------- Services Style --------- */
+#services {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: clamp(4.5rem, 4.3572rem + 0.71435vi, 5rem) clamp(1.6875rem, 1.6339rem + 0.265vi, 1.87rem);
+}
+
+#services h2 {
+    color: #d1d1c7;
+    font-size: clamp(3rem, 2.25rem + 3.75vw, 5.62rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#services div h2 span {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+#services .service-contents {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: flex-start;
+    gap: 3rem;
+    padding-top: 5rem 0;
+}
+
+.ser-subHeading {
+    color: rgb(107 100 92/1);
+    font-size: clamp(0.875rem, 0.539rem + 0.5786vi, 1rem);
+    text-transform: uppercase;
+}
+
+.ser-para {
+    width: 35%;
+    font-size: clamp(1rem, 0.928rem + 0.357vi, 1.25rem);
+    color: rgb(107 100 92/1);
+    line-height: 120%;
+    text-wrap: balance;
+}
+
+.ser-container {
+    width: 100%;
+    padding: 3rem 0rem;
+    position: relative;
+}
+
+.ser-container .one {
+    display: flex;
+    align-items: flex-start;
+    background-color: #111;
+}
+
+.ser-container .ser-border {
+    border-top: 1px solid #393632;
+    padding-top: 3rem;
+}
+
+.ser-container .one .oneL {
+    width: 50%;
+}
+
+.ser-container .one .oneL h2 {
+    color: #d1d1c7;
+    font-size: clamp(1.95rem, 1.5rem + 2.28vi, 3.55rem);
+    font-family: "Montreal-Regular";
+}
+
+.ser-container .one .oneR {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ser-container .one .oneR h3 {
+    font-size: clamp(1.95rem, 1.5rem + 2.28vi, 3.55rem);
+    font-family: "Montreal-Regular";
+    color: #d1d1c7
+}
+
+.ser-container .one .oneR p {
+    color: #a29e9a;
+    padding-top: clamp(1.125rem, 1.08rem + 0.178vi, 1.25rem);
+    padding-bottom: clamp(1.125rem, 1.08rem + 0.178vi, 1.25rem);
+    max-width: 80%;
+}
+
+.ser-container .one .oneR .list {
+    padding-top: clamp(1.125rem, 1.08rem + 0.178vi, 1.25rem);
+    padding-bottom: clamp(1.125rem, 1.08rem + 0.178vi, 1.25rem);
+    color: #a29e9a;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.ser-container .one .oneR .list .listItem {
+    font-size: clamp(1rem, 0.9286rem + 0.357vi, 1.25rem);
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #393632;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.ser-container .one .oneR .list .listItem span{
+    font-size: clamp(1rem, 0.9286rem + 0.357vi, 1.25rem);
+    padding-right: 1.5rem;
+    font-weight: 600;
+}
+
+.listItem.i-bt{
+    border: none !important;
+}
