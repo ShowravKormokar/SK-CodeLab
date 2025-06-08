@@ -46,7 +46,7 @@ body {
     /* background-color: rgb(232 232 227/1); */
 }
 
-header {
+.navbar {
     position: relative;
     width: 100%;
     height: auto;
@@ -58,19 +58,19 @@ header {
     padding-block: 20px;
 }
 
-header .nav-logo {
+.navbar .nav-logo {
     width: 50%;
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
-header .nav-logo p {
+.navbar .nav-logo p {
     color: #6b645c;
     font-size: 18px;
 }
 
-header .nav-links {
+.navbar .nav-links {
     width: 50%;
     flex-grow: 1;
     display: flex;
@@ -103,14 +103,14 @@ header .nav-links {
     transform: scale(1.2) translateY(20px);
 }
 
-header .nav-links a {
+.navbar .nav-links a {
     color: #6b645c;
     transition-property: all;
     transition-duration: 0.6s;
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.border{
+.border {
     width: 0%;
     height: 1px;
     position: absolute;
