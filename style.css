@@ -20,7 +20,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(232, 232, 227/1);
+    background-color: rgb(232 232 227/1);
 }
 
 /* ------ Preloader Style ----- */
@@ -34,7 +34,7 @@ body {
     z-index: 999;
     overflow: hidden;
     /* Display Block*/
-    display: none;
+    display: block;
     pointer-events: none;
 }
 
@@ -43,7 +43,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 1;
-    background-color: rgb(232, 232, 227/1);
+    background-color: rgb(232 232 227/1);
 }
 
 header {
@@ -132,7 +132,7 @@ header .nav-links a {
 #hero .hero-heading h1 svg path {
     transform: translateY(100%);
     /* Opacity 0*/
-    opacity: 1;
+    opacity: 0;
 }
 
 #hero .hero-content {
@@ -181,7 +181,7 @@ header .nav-links a {
 }
 
 #hero .hero-content .hero-desc button:hover {
-    background-color: rgb(140 140 115/1c);
+    background-color: rgb(140 140 115/1);
 }
 
 #hero .hero-content .hero-img {
