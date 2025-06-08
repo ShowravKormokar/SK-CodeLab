@@ -117,8 +117,9 @@ gsap.to("#ser-1", {
     scrollTrigger: {
         trigger: "#ser-1",
         pin: true,
-        start: "top 10%",
-        end: "bottom -40%",
+        start: "top 100px",
+        // end: "bottom -40%",
+        end: "bottom -250px",
         scrub: true,
         pinSpacing: false,
         // markers: true
@@ -129,8 +130,8 @@ gsap.to("#ser-2", {
     scrollTrigger: {
         trigger: "#ser-2",
         pin: true,
-        start: "top 28%",
-        end: "bottom 30%",
+        start: "top 230px",
+        end: "bottom 260px",
         scrub: true,
         pinSpacing: false,
         // markers: true
@@ -141,8 +142,8 @@ gsap.to("#ser-3", {
     scrollTrigger: {
         trigger: "#ser-3",
         pin: true,
-        start: "top 46%",
-        end: "bottom 100%",
+        start: "top 350px",
+        end: "bottom 1000px",
         scrub: true,
         pinSpacing: false,
         // markers: true
