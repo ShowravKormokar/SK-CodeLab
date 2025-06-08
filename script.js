@@ -85,10 +85,10 @@ gsap.from(".hero-date p, .hero-date h2", {
 
 
 // ----------- Services Animation
-// gsap.set("#services", {
-    // opacity: 0.873,
-    // transform: "translateY(5.05529px) scale(0.993681) translateZ(0px)"
-// })
+gsap.set("#main #hero", {
+    opacity: 0.873,
+    transform: "translateY(5px) scale(1) translateZ(0px)"
+})
 
 const texts = document.querySelectorAll("#services .text-ser h2 span");
 
@@ -113,38 +113,38 @@ gsap.to(texts, {
 });
 
 gsap.to("#ser-1", {
-    duration: 1,
+    // duration: 1,
     scrollTrigger: {
         trigger: "#ser-1",
         pin: true,
         start: "top 10%",
-        end: "bottom -12.5%",
+        end: "bottom -40%",
         scrub: true,
         pinSpacing: false,
         // markers: true
     }
 });
 gsap.to("#ser-2", {
-    duration: 3,
+    // duration: 3,
     scrollTrigger: {
         trigger: "#ser-2",
-        start: "top 27%",
-        end: "bottom 44%",
-        scrub: true,
         pin: true,
+        start: "top 28%",
+        end: "bottom 30%",
+        scrub: true,
         pinSpacing: false,
         // markers: true
     }
 });
 gsap.to("#ser-3", {
-    duration: 1,
+    // duration: 1,
     scrollTrigger: {
         trigger: "#ser-3",
-        start: "top 44%",
+        pin: true,
+        start: "top 46%",
         end: "bottom 100%",
         scrub: true,
-        pin: true,
         pinSpacing: false,
-        markers: true
+        // markers: true
     }
 });
