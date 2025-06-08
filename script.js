@@ -118,28 +118,28 @@ gsap.to("#ser-1", {
         trigger: "#ser-1",
         pin: true,
         start: "top 8%",
-        end: "bottom -32%",
+        end: "bottom -30%",
         scrub: true,
         pinSpacing: false,
         // markers: true
     }
 });
-gsap.to(".ser-2", {
+gsap.to("#ser-2", {
     duration: 3,
     scrollTrigger: {
-        trigger: ".ser-2",
+        trigger: "#ser-2",
         start: "top 26%",
-        end: "bottom 39%",
+        end: "bottom 41%",
         scrub: true,
         pin: true,
         pinSpacing: false,
         // markers: true
     }
 });
-gsap.to(".ser-3", {
+gsap.to("#ser-3", {
     duration: 3,
     scrollTrigger: {
-        trigger: ".ser-3",
+        trigger: "#ser-3",
         start: "top 44%",
         end: "bottom 110%",
         scrub: true,
