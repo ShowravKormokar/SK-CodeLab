@@ -414,3 +414,60 @@ body {
     gap: 3rem;
     padding-top: 5rem 0;
 }
+
+
+.pro-con {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.pro-top {
+    position: relative;
+    width: 40%;
+}
+
+.zero {
+    font-size: 20rem;
+    color: #d1d1c7;
+}
+
+.topLeft {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+    scrollbar-width: none;
+}
+
+.topLeft .num {
+    font-size: 20rem;
+    color: #a29e9a;
+}
+.topRight {
+    width: 50%;
+    height: 100vh;
+}
+
+.topRight .image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.topRight .image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+
+
