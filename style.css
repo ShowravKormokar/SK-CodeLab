@@ -417,6 +417,8 @@ body {
 
 
 .pro-con {
+    width: 100%;
+    height: auto;
     display: flex;
     align-items: flex-start;
     padding-top: 30px;
@@ -451,7 +453,7 @@ body {
 }
 .topRight {
     width: 50%;
-    height: 100vh;
+    height: auto;
 }
 
 .topRight .image1 {
@@ -468,6 +470,3 @@ body {
     object-fit: cover;
     position: relative;
 }
-
-
-

@@ -149,3 +149,27 @@ gsap.to("#ser-3", {
         // markers: true
     }
 });
+
+
+// --------- Project section animation
+
+/*
+step 1: Trigger: .pro-con then pin
+*/
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".topRight", {
+    yPercent: -100,
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".pro-con",
+        start: "top 20px",
+        end: () => "+=" + document.querySelector(".topRight").scrollHeight,
+        scrub: true,
+        pin: ".pro-con", // pin the whole section
+        anticipatePin: 1,
+        markers: true
+    }
+});
+
